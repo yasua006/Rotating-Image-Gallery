@@ -1,16 +1,11 @@
 body {
-    /* i midten horisontalt*/
     display: flex;
     justify-content: center;
     text-align: center;
-
     flex-direction: column;
-
-    /* i midten vertikalt*/
     height: 100vh;
     align-items: center;
 }
-
 .image-container {
     width: 200px;
     height: 200px;
@@ -18,7 +13,6 @@ body {
     transform: perspective(1000px) rotateY(0deg);
     position: relative;
 }
-
 .image-container span {
     transform: rotateY(calc(var(--i) * 45deg)) translateZ(400px);
     position: absolute;
@@ -26,19 +20,16 @@ body {
     left: 0;
     width: 80%;
 }
-
 .image-container span img {
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
 }
-
 .Btn-container {
     width: 80%;
     position: relative;
 }
-
 .btn {
     position: absolute;
     bottom: -80px;
@@ -49,15 +40,12 @@ body {
     border: none;
     cursor: pointer;
 }
-
 .btn:hover {
     filter: brightness(1.5);
 }
-
 #prev {
     left: 20%;
 }
-
 #next {
     right: 20%;
 }
